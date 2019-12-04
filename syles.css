@@ -1,11 +1,11 @@
-#game-board{
+#game-board {
     width: 80%;
     height: 850px;
     border: 1px solid black;
     border-radius: 10px;
 }
 
-.row{
+.row {
     border: 1px solid black;
     height: 33%;
     width: 100%;
@@ -13,7 +13,7 @@
 }
 
 
-.col{
+.col {
     border: 1px solid black;
     width: 33.3%;
     height: 100%;
@@ -22,7 +22,7 @@
     align-items: center;
 }
 
-.mole{
+.mole {
     width: 50px;
     height: 50px;
     background-color: black;
