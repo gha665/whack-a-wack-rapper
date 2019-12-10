@@ -1,13 +1,30 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 #game-board {
     width: 80%;
     height: 750px;
     /* border: 1px solid black; */
     border-radius: 10px;
-    background-image: './images/brick-wall.jpg';
+    /*background-image: url('./images/brick-wall.jpg');*/
+}
+
+body {
+    background-image: url('./../images/graffiti-wall-blackoverlay.jpg');
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+#score {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .row {
-    border: 1px solid black;
+    border: 1px dashed #a54f7e;
     height: 33%;
     width: 100%;
     display: flex;
@@ -15,7 +32,7 @@
 
 
 .col {
-    border: 1px solid black;
+    border: 1px dashed #a54f7e;
     width: 33.3%;
     height: 100%;
     display: flex;
