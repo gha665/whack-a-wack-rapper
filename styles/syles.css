@@ -1,8 +1,9 @@
 #game-board {
     width: 80%;
     height: 750px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 10px;
+    background-image: './images/brick-wall.jpg';
 }
 
 .row {
@@ -22,20 +23,9 @@
     align-items: center;
 }
 
-.mole {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    border-radius: 50%;
-}
-
 .rapper {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: black;
     border-radius: 50%;
-}
-
-.display-none {
-    display: none;
 }
