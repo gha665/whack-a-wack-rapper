@@ -13,6 +13,8 @@
 
 body {
     background-image: url('./../images/graffiti-wall-blackoverlay.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Sedgwick Ave Display', cursive;
 }
 
