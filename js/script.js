@@ -9,9 +9,12 @@ window.onload = function () {
     let audioWin = new this.Audio(
         './sounds/Yeah-Boy.mp3');
 
+    let audioLose = new this.Audio(
+        './sounds/so-damn-tough.mp3');
+
     function showTheRapper() {
 
-        if(!paused) {
+        if (!paused) {
             rapperUpdate();
             rapperImg1.remove();
 
@@ -22,7 +25,7 @@ window.onload = function () {
             randomBox.append(rapperImg1);
         }
 
-        let randomNumWithGlobalScope = (Math.floor(Math.random() * 4000));
+        let randomNumWithGlobalScope = (Math.floor(Math.random() * 3000));
         setTimeout(showTheRapper, randomNumWithGlobalScope);
     }
 
@@ -34,8 +37,8 @@ window.onload = function () {
         paused = true;
 
         // resume the  game...
-        setTimeout(function() {
-            if(gameover() === false) {
+        setTimeout(function () {
+            if (gameover() === false) {
                 paused = false;
                 document.getElementById("score").style.color = 'white';
             }
@@ -65,8 +68,9 @@ window.onload = function () {
 
     function checkStatus() {
         if (theScore <= 0) {
+            audioLose.play();
             document.getElementById("score").style.color = 'red';
-            document.getElementById('score').innerHTML = "YOU WACK! CULTURE UP!";
+            document.getElementById('score').innerHTML = "YOU'RE WACK! CULTURE UP!";
         }
 
         if (theScore >= 100) {

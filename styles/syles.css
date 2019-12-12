@@ -5,7 +5,7 @@
 
 #game-board {
     width: 80%;
-    height: 750px;
+    height: 700px;
     /* border: 1px solid black; */
     border-radius: 10px;
     /*background-image: url('./images/brick-wall.jpg');*/
@@ -18,15 +18,23 @@ body {
     font-family: 'Sedgwick Ave Display', cursive;
 }
 
+button {
+    padding-top: 12px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 40px;
+    background: #a54f7e;
+    color: #fff
+}
+
 #score {
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 25px;
     color: #fff;
     text-transform: uppercase;
 }
 
 .row {
-    border: 1px dotted #a54f7e;
+    /* border: 3px dashed #a54f7e; */
     height: 33%;
     width: 100%;
     display: flex;
@@ -34,12 +42,31 @@ body {
 
 
 .col {
-    border: 1px dotted #a54f7e;
+    /* border: 3px dashed #a54f7e; */
     width: 33.3%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
+    border: 30px solid transparent;
+    border-image: url('../images/custom-css-border.png') 120 repeat;
+}
+
+#game-board .row:first-child .col {
+    border-bottom: 0;
+}
+
+#game-board .row:last-child .col {
+    border-top: 0;
+}
+
+#game-board .row .col:first-child {
+    border-right: 0;
+}
+
+#game-board .row .col:last-child {
+    border-left: 0;
 }
 
 .rapper {
