@@ -48,7 +48,7 @@ document.getElementById('startGame').onclick = () => {
             randomBox.append(rapperImg1);
         }
 
-        let randomNumWithGlobalScope = (Math.floor(Math.random() * 4000));
+        let randomNumWithGlobalScope = (Math.floor(Math.random() * 5000));
         setTimeout(showTheRapper, randomNumWithGlobalScope);
     }
     showTheRapper();
@@ -68,7 +68,7 @@ document.getElementById('startGame').onclick = () => {
                 paused = false;
                 document.getElementById("score").style.color = 'white';
             }
-        }, 2000);
+        }, 1000);
 
         let scoreColor = 'red';
 
@@ -121,10 +121,10 @@ document.getElementById('startGame').onclick = () => {
 
 
 //------------------------ swap cursor on click -----------------------// 
-$('#game').on('mousedown', function(e) {
+$('#game').on('mousedown', function (e) {
     $('#game').addClass('cursor-clicked');
 });
 
-$('#game').on('mouseup', function(e) {
+$('#game').on('mouseup', function (e) {
     $('#game').removeClass('cursor-clicked');
 });
