@@ -1,12 +1,93 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    /* display: flex; */
 }
 
+
+
+
+
+/* --------------------hides the game page before the 'HIT IT' button is clicked-------------------- */
+#game {
+    display: none;
+    cursor: url('./../images/microphone-1.png'), default;
+}
+.cursor-clicked {
+    cursor: url('./../images/microphone-2.png'), default!important;
+}
+
+/* --------------------------makes the game page visible-------------------------------------------- */
+#start {
+    display: block;
+    color: white;
+}
+
+
+
+/* ----------------------------------start page decoration------------------------------------------ */
+.drill {
+    text-align: center;
+    margin: 50px 50px 0 50px;
+    font-size: 4em;
+    color: #a54f7e;
+    outline: 1px;
+    outline-color: #fff;
+}
+
+.span-whack {
+    color: red;
+}
+
+.span-truemc {
+    color: green;
+}
+
+.instructions {
+    margin: 50px;
+    text-align: center;
+    font-size: 3em;
+}
+
+.instructions:first-of-type {
+    margin-bottom: 10px;
+}
+
+.instructions:last-of-type {
+    margin-top: 10px;
+}
+
+.disclaimer h6, .disclaimer p {
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #A9A9A9;
+    text-align: center;
+}
+
+#startGame {
+    margin-top: 10px;
+    align-self: center;
+    border-radius: 10%;
+    padding-top: 12px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 40px;
+    background: #a54f7e;
+    color: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* ----------------------------------main page decoration-------------------------------------------- */
 #game-board {
     width: 80%;
     height: 700px;
-    /* border: 1px solid black; */
     border-radius: 10px;
     /*background-image: url('./images/brick-wall.jpg');*/
 }
@@ -16,14 +97,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Sedgwick Ave Display', cursive;
-}
-
-button {
-    padding-top: 12px;
-    font-family: 'Sedgwick Ave Display', cursive;
-    font-size: 40px;
-    background: #a54f7e;
-    color: #fff
 }
 
 #score {
@@ -39,7 +112,6 @@ button {
     width: 100%;
     display: flex;
 }
-
 
 .col {
     /* border: 3px dashed #a54f7e; */

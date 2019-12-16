@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./images/start-page-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* font-family: 'Sedgwick Ave Display', cursive; */
+}

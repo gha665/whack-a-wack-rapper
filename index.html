@@ -6,46 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Whack-A-Wack-Rapper</title>
-    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./styles/syles.css" />
-    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/syles.css" />
     <script src="./js/rappers.js"></script>
     <script src="./js/rapper.js"></script>
     <!-- <script src="./js/game.js"></script> -->
-    <script src="./js/script.js"></script>
 </head>
 
 
 <body>
 
-    <center>
+    <!------------------------------- START PAGE ---------------------------->
+    <div id="start">
 
-        <button id="hit-it">HIT IT!</button>
+        <h1 class="drill">DA DRILL</h1>
+        <h4 class="instructions">Whack a <span class="span-whack">whack rapper</span> and you'll win $tripes.</h4>
+        <h4 class="instructions">Whack a <span class="span-truemc">true MC</span> and you'll suck.</h4>
 
-        <h1 id="score">Score: 0</h1>
 
-        <div id="game-board">
-
-            <div class="row row1">
-                <div class="col col1"></div>
-                <div class="col col2"></div>
-                <div class="col col3"></div>
-            </div>
-
-            <div class="row row2">
-                <div class="col col1"></div>
-                <div class="col col2"></div>
-                <div class="col col3"></div>
-            </div>
-
-            <div class="row row3">
-                <div class="col col1"></div>
-                <div class="col col2"></div>
-                <div class="col col3"></div>
-            </div>
-
+        <div class="disclaimer">
+                <h6>*DISCLAIMER*</h6>
+                <p>This game is made for educational and entertainment purposes only. In no way is this game
+                    an expression of disrespect for the artists mentioned further. All similarities are purely coincidental.
+                    Right.
+                    Uh-huh. Word.</p>        
         </div>
+      
+        <h2 class="drill">READY, PLAYA?</h2>
 
-    </center>
+        <button id="startGame">HIT IT!</a></button>
+    </div>
+
+
+    <!-------------------------------- GAME PAGE ----------------------------->
+    <div id="game">
+
+        <center>
+
+            <h1 id="score">$core: 0</h1>
+
+            <div id="game-board">
+
+                <div class="row row1">
+                    <div class="col col1"></div>
+                    <div class="col col2"></div>
+                    <div class="col col3"></div>
+                </div>
+
+                <div class="row row2">
+                    <div class="col col1"></div>
+                    <div class="col col2"></div>
+                    <div class="col col3"></div>
+                </div>
+
+                <div class="row row3">
+                    <div class="col col1"></div>
+                    <div class="col col2"></div>
+                    <div class="col col3"></div>
+                </div>
+
+            </div>
+
+
+            <!-- <audio src="./sounds/instrumental.mp3" controls>
+            <embed name="instrumental" src="./sounds/instrumental.mp3" loop="false" hidden="true" autostart="true">
+            <p>If you are reading this, it is because your browser does not support the audio element.</p>
+        </audio> -->
+
+        </center>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 
