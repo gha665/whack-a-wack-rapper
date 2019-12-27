@@ -1,7 +1,6 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    /* display: flex; */
 }
 
 
@@ -105,14 +104,12 @@ body {
 }
 
 .row {
-    /* border: 3px dashed #a54f7e; */
     height: 33%;
     width: 100%;
     display: flex;
 }
 
 .col {
-    /* border: 3px dashed #a54f7e; */
     width: 33.3%;
     height: 100%;
     display: flex;

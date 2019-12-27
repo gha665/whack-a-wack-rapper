@@ -20,13 +20,13 @@ document.getElementById('startGame').onclick = () => {
 
 
     //---------------------sound decoration---------------------------------//
-    let audioWin = new Audio('./sounds/Yeah-Boy.mp3');
-    let audioLose = new Audio('./sounds/so-damn-tough.mp3');
-    let audioPunch = new Audio('./sounds/punch.mp3')
     let audioBackground = new Audio();
     audioBackground.src = './sounds/instrumental.mp3';
     document.querySelector('body').append(audioBackground);
     audioBackground.play();
+    let audioPunch = new Audio('./sounds/punch.mp3')
+    let audioWin = new Audio('./sounds/Yeah-Boy.mp3');
+    let audioLose = new Audio('./sounds/so-damn-tough.mp3');
 
     // audioBackground.onload = () => {
     //     audioBackground.play();
